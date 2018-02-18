@@ -33,7 +33,6 @@ class TenantsController < ApplicationController
     end
   end
   
-  
   def change
     @tenant = Tenant.find(params[:id])
     Tenant.set_current_tenant @tenant.id
